@@ -1,7 +1,7 @@
 ---
-name: SimpleBanner
+name: SimpleBannerRUS
 version: 0.0.2
-main: Invy55\SimpleBanner\Main
+main: MaksPV\SimpleBannerRUS\Main
 api: 3.0.0
 
 commands:
