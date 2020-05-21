@@ -1,8 +1,8 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/MaksPV/SimpleBannerRUS
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Invy55/SimpleBanner
 branches:
 - master
 projects:
-  SimpleBannerRUS:
+  SimpleBanner:
     path: "" 
     icon: ".logo.png"
     libs:
