@@ -1,6 +1,6 @@
-[![](https://poggit.pmmp.io/shield.state/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
-[![](https://poggit.pmmp.io/shield.api/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
-[![](https://poggit.pmmp.io/shield.dl.total/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
+[![](https://poggit.pmmp.io/shield.state/SimpleBannerRUS)](https://poggit.pmmp.io/p/SimpleBannerRUS)
+[![](https://poggit.pmmp.io/shield.api/SimpleBannerRUS)](https://poggit.pmmp.io/p/SimpleBannerRUS)
+[![](https://poggit.pmmp.io/shield.dl.total/SimpleBannerRUS)](https://poggit.pmmp.io/p/SimpleBannerRUS)
 
 # SimpleBannerRUS
 Является переводом https://github.com/Invy55/SimpleBanner
