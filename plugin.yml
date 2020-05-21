@@ -6,7 +6,7 @@ api: 3.0.0
 
 commands:
  banner:
-  description: Open a menu to create a new custom banner
+  description: Откройте меню, чтобы создать новый собственный баннер
   permission: simplebanner.command.banner
 permissions:
  simplebanner.command.banner:
