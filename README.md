@@ -2,7 +2,9 @@
 [![](https://poggit.pmmp.io/shield.api/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
 [![](https://poggit.pmmp.io/shield.dl.total/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
 
-# SimpleBanner
+# SimpleBannerRUS
+Является переводом https://github.com/Invy55/SimpleBanner
+
 Простой генератор баннеров для Pocketmine-MP.
 
 Этот плагин позволяет создавать собственные баннеры со всеми существующими узорами и цветами, используя простой и удобный игровой интерфейс.
