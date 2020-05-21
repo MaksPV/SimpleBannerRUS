@@ -57,7 +57,7 @@ class Main extends PluginBase implements Listener{
                         $this->layer($sender, strtolower($args[0]));
                     }
 			    }else{
-				    $sender->sendMessage('§4Пожалйста, выберите цвет заднего фона:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+				    $sender->sendMessage('§4Пожалйста, выберите цвет фона:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
 			    }
 			default:
 				return false;
@@ -78,7 +78,7 @@ class Main extends PluginBase implements Listener{
                         $selected = $result;
                     }elseif($result == 0){
                         $playern = $player->getName();
-                        $to_text = '§'.$this->colortags[strtoupper($this->$playern->color)]."Edited ".$this->$playern->color." banner";  //TODO: pattern to name
+                        $to_text = '§'.$this->colortags[strtoupper($this->$playern->color)]."Изменённый ".$this->$playern->color." флаг";  //TODO: pattern to name
                         $player->sendMessage("§aГотово! Сгенерированное название баннера: §r" . $to_text);
                         $item = Item::fromString("minecraft:banner:".$this->bannerc[strtoupper($this->$playern->color)]);
                         $item->setCount(16);
@@ -98,7 +98,7 @@ class Main extends PluginBase implements Listener{
         $colortag = '§'.$this->colortags[strtoupper($color)];
         $form->setTitle("Создание $colortag"."$color §rфлаг");
         $form->setContent("Выберите узор");
-        if($all !== false) $form->addButton("§k|-| §rГотово");
+        if($all !== false) $form->addButton("§rПолучить флаг");
         foreach($this->items as $item){
             $form->addButton($item);
         }
