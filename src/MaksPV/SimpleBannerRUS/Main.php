@@ -42,7 +42,7 @@ class Main extends PluginBase implements Listener{
         $this->colortags = ['BLACK'=>'0', 'DARK_GREEN'=>'2', 'DARK_AQUA'=>'3', 'DARK_PURPLE'=>'5', 'ORANGE'=>'6', 'GRAY'=>'7', 'DARK_GRAY'=>'8', 'BLUE'=>'9', 'GREEN'=>'a', 'AQUA'=>'b', 'RED'=>'c', 'LIGHT_PURPLE'=>'d', 'YELLOW'=>'e', 'WHITE'=>'f'];
         $this->colors = ['BLACK', 'DARK_GREEN', 'DARK_AQUA', 'DARK_PURPLE', 'ORANGE', 'GRAY', 'DARK_GRAY', 'BLUE', 'GREEN', 'AQUA', 'RED', 'LIGHT_PURPLE', 'YELLOW', 'WHITE'];
         $this->bannerc = ['BLACK'=>'0',  'DARK_GREEN'=>'2', 'DARK_AQUA'=>'6', 'DARK_PURPLE'=>'5', 'ORANGE'=>'14', 'GRAY'=>'7', 'DARK_GRAY'=>'8', 'BLUE'=>'4', 'GREEN'=>'10', 'AQUA'=>'12', 'RED'=>'1', 'LIGHT_PURPLE'=>'9', 'YELLOW'=>'11', 'WHITE'=>'15'];
-        $this->items = ['Градиент сверху вниз', 'Градиент снизу вверх', 'Кирпичи', 'Верхняя половина прямоугольника', 'Нижняя половина прямоугольника', 'Левая половина прямоугольника', 'Правая половинка прямоугольника', 'Верхний маленький прямоугольник', 'Нижний маленький прямоугольник', 'Левый маленький прямоугольник', 'Правый маленький прямоугольник', 'Верхний левый треугольник', 'Верхний правый треугольник', 'Нижний левый треугольник', 'Нижний правый треугольник', 'Большой §lX', 'Диагональ §l/', 'Диагональ §l\\', 'Крест §l+', 'Центрированная вертикальная линия', 'Центрированная горизонтальная линия', 'Верхний левый квадрат', 'Верхний правый квадрат', 'Нижний левый квадрат', 'Нижний правый квадрат', 'Верхний треугольник', 'Нижний треугольник', 'Центрированный ромб', 'Центрированный "круг"', 'Нижние шипы', 'Верхние шипы', '4 горизонтальных линий', 'Рамка', 'Шипастая рамка', 'Центрированный цветок', 'Голова криппера', 'Центральный череп', 'Логотип Mojang'];
+        $this->items = ['Градиент сверху вниз', 'Градиент снизу вверх', 'Кирпичи', 'Верхняя половина прямоугольника', 'Нижняя половина прямоугольника', 'Левая половина прямоугольника', 'Правая половинка прямоугольника', 'Верхняя треть прямоугольника', 'Нижняя треть прямоугольника', 'Левая треть прямоугольника', 'Правая треть прямоугольника', 'Верхне-левый треугольник', 'Верхне-правый треугольник', 'Нижне-левый треугольник', 'Нижне-правый треугольник', 'Большой §lX', 'Диагональ §l/', 'Диагональ §l\\', 'Крест §l+', 'Центральная вертикальная линия', 'Центральная горизонтальная линия', 'Верхне-левый квадрат', 'Верхне-правый квадрат', 'Нижне-левый квадрат', 'Нижне-правый квадрат', 'Верхний треугольник', 'Нижний треугольник', 'Ромб', 'Круг', 'Нижние шипы', 'Верхние шипы', '4 вертикальных линии', 'Рамка', 'Шипастая рамка', 'Цветок/Шестерня', 'Голова криппера', 'Череп с костями', 'Логотип Mojang'];
         $this->patterns = ['gra', 'gru', 'bri', 'hh','hhb','vh','vhr','ts','bs','ls','rs','ld','rud','lud','rd','cr','dls','drs','sc','cs','ms','tl','bl','tr','br','tt','bt','mr','mc','bts','tts','ss','bo','cbo','flo','cre','sku','moj'];
 	}
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
@@ -51,13 +51,13 @@ class Main extends PluginBase implements Listener{
             case "banner":
                 if(isset($args[0])){
                     if(!in_array(strtoupper($args[0]), $this->colors)){
-                        $sender->sendMessage('§4Цвет ' . $args[0] . ' не найден, есть такие цвета:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+                        $sender->sendMessage('Цвет ' . $args[0] . ' не найден, есть такие цвета:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
                     }else{ 
                         $this->$player =  new \stdClass(); 
                         $this->layer($sender, strtolower($args[0]));
                     }
 			    }else{
-				    $sender->sendMessage('§4Пожалйста, выберите цвет фона:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+				    $sender->sendMessage('Пожалйста, выберите цвет фона:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
 			    }
 			default:
 				return false;
