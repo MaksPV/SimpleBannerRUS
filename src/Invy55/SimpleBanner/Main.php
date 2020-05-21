@@ -26,7 +26,7 @@ Translated by
 ----- This project is under the GNU Affero General Public License v3.0 -----                       
 */
 declare(strict_types=1);
-namespace Invy55\SimpleBanner;
+namespace MaksPV\SimpleBannerRUS;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\Player;
