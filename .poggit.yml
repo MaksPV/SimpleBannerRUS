@@ -2,7 +2,7 @@
 branches:
 - master
 projects:
-  SimpleBanner:
+  SimpleBannerRUS:
     path: "" 
     icon: ".logo.png"
     libs:
