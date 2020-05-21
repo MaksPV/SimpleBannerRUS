@@ -3,17 +3,17 @@
 [![](https://poggit.pmmp.io/shield.dl.total/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
 
 # SimpleBanner
-A simple banner generator for Pocketmine-MP.
+Простой генератор баннеров для Pocketmine-MP.
 
-This plugin allows you to generate custom banners with all the existing patterns and colors, using a simple user-friendly in game interface.
+Этот плагин позволяет создавать собственные баннеры со всеми существующими узорами и цветами, используя простой и удобный игровой интерфейс.
 
-## Commands
- - /banner _[color tag](https://github.com/Invy55/SimpleBanner#color-tags)_ -  Open a simple menu to create the banner
+## Комманды
+ - /banner _[color tag](https://github.com/MaksPV/SimpleBannerRUS#цветовые-тэги)_ -  Откройте простое меню для создания баннера
  
    Permission: _simplebanner.command.banner_
    
-## Color Tags
-Also visible with _/banner_
+## Цветовые тэги
+Также видно с _/banner_
 
  - black
  - dark_green
@@ -29,5 +29,5 @@ Also visible with _/banner_
  - light_purple
  - yellow
  - white
-### Knowed issues
- - Received banner isn't rendered.
+### Известные проблемы
+ - Полученный баннер не отображается.
