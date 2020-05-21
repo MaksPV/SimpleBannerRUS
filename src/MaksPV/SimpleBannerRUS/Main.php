@@ -96,7 +96,7 @@ class Main extends PluginBase implements Listener{
             }
         });
         $colortag = '§'.$this->colortags[strtoupper($color)];
-        $form->setTitle("Создание $colortag"."$color §rфлаг");
+        $form->setTitle("Создание $colortag"."$color §rфлага");
         $form->setContent("Выберите узор");
         if($all !== false) $form->addButton("§rПолучить флаг");
         foreach($this->items as $item){
