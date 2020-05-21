@@ -7,8 +7,8 @@ api: 3.0.0
 commands:
  banner:
   description: Откройте меню, чтобы создать новый собственный баннер
-  permission: simplebannerrus.command.banner
+  permission: simplebanner.command.banner
 permissions:
- simplebannerrus.command.banner:
+ simplebanner.command.banner:
   default: op
 ...
